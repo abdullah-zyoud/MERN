@@ -1,0 +1,10 @@
+.Main {
+    height: 500px;
+    width: 70%;
+    display: inline-block;
+    background-color: red;
+    margin: 10px;
+    position: relative;
+    bottom: 130px;
+  }
+  
