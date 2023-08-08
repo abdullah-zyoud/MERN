@@ -1,0 +1,41 @@
+.tabs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  
+}
+
+.tabs-header {
+  display: flex;
+}
+
+.tab-header {
+  
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  
+
+}
+
+.tab-header.active {
+  background-color: black;
+  color: white;
+}
+
+.tabs-content {
+  width: 30%;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
