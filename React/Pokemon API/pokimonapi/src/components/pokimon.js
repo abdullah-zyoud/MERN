@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./pokimon.css";
+import axios from 'axios';
 
 function PokemonList() {
     const [pokemonList, setPokemonList] = useState([]);
@@ -7,9 +8,8 @@ function PokemonList() {
     useEffect(() => {
         async function fetchPokemon() {
             try {
-                const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=807');
-                const data = await response.json();
-                setPokemonList(data.results);
+                const response =   axios.get('https://pokeapi.co/api/v2/pokemon?limit=807');
+                setPokemonList(response.data.results);
             } catch (error) {
                 console.error('Error fetching Pokémon:', error);
             }
