@@ -1,0 +1,47 @@
+ method = get :http://localhost:8000/api/users/new
+
+{
+    "password": "qZKIi5vlkDen9Ku",
+    "email": "Alvena36@yahoo.com",
+    "phoneNumber": "363.275.2182",
+    "lastName": "Price",
+    "firstName": "Tyshawn",
+    "_id": "6bbc8bd1-69ae-476e-882e-6c9261181497"
+}
+
+ method = get :http://localhost:8000/api/companies/new
+{
+    "_id": "f7129a89-4e8d-4602-8757-5cafb15dd5e4",
+    "name": "Thompson Inc",
+    "address": {
+        "street": "Cartwright Cliff",
+        "city": "Jenkinsland",
+        "state": "West Virginia",
+        "zipCode": "46823-0613",
+        "country": "Saint Vincent and the Grenadines"
+    }
+}
+
+ method = get :http://localhost:8000/api/user/company
+
+ {
+    "user": {
+        "password": "DnG7x6dll1h2LCA",
+        "email": "Jany66@yahoo.com",
+        "phoneNumber": "501.767.5854 x911",
+        "lastName": "Dietrich",
+        "firstName": "Elwin",
+        "_id": "44650eca-7e1f-462c-8425-9c6e3fd21611"
+    },
+    "company": {
+        "_id": "b6a7a714-3c3f-4668-8453-99eb31a507a1",
+        "name": "Stoltenberg, Hoeger and Zulauf",
+        "address": {
+            "street": "Charity Mountains",
+            "city": "Lake Dorris",
+            "state": "Delaware",
+            "zipCode": "31929",
+            "country": "Comoros"
+        }
+    }
+}
